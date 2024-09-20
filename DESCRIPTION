@@ -1,15 +1,24 @@
 Package: minhub.fr
 Type: Translation-module
-Title: What the package does (short line)
-Version: 1.0
+Title: Implémentation minimale des modèles d'apprentissage profond.
+Version: 0.0.0.9000
 Date: 2024-05-26
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: c(
+    person(given = "Christophe",
+           family = "Regouby",
+           role = c("aut", "cre", "cph"),
+           email = "christophe.regouby@free.fr"
+           )
+    )
+Description: Une collection d'implémentations minimale de modèles d'apprentissage 
+  profond.
+License: MIT + file LICENSE
+Encoding: UTF-8
 Language: fr
 Translates: minhub (== 0.0.0.9000)
 LazyData: true
 imports:
     rhelpi18n
-
+Remotes: 
+    eliocamp/rhelpi18n
+RoxygenNote: 7.3.2
