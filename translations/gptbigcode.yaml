@@ -1,0 +1,83 @@
+title:
+  original: GPT BigCode
+  translation: GPT BigCode
+arguments:
+  vocab_size:
+    original: |-
+      An integer indicating the size of the vocabulary or the number
+      of unique tokens in the input data.
+    translation: |-
+      Un entier indiquant la taille du vocabulaire ou le nombre 
+      de tokens uniques dans les données d'entrée.
+  n_embd:
+    original: An integer specifying the dimensionality of the embedding vectors.
+    translation: |
+      Un entier indiquant la taille du vocabulaire ou le nombre 
+      de tokens uniques dans les données d'entrée.
+  n_head:
+    original: |-
+      An integer representing the number of attention heads in the
+      multi-head attention mechanism.
+    translation: |-
+      Un entier représentant le nombre de têtes d'attention dans chaque couche 
+      d'attention de le module multi-tête.
+  n_layer:
+    original: An integer indicating the number of layers in the deep learning model.
+    translation: |
+      Un entier indiquant le nombre de couches cachées dans l'encodeur du Transformer.
+  max_pos:
+    original: |-
+      An integer specifying the maximum position encoding value or
+      the maximum sequence length.
+    translation: |
+      Un entier spécifiant la longueur maximale des séquences que ce modèle peut
+      recevoir.
+  pdrop:
+    original: Dropout probability the attention, residual and embeddings dropout.
+    translation: |-
+      Le taux de dropout dans les vecteurs embedding, 
+      les couches d'attention et les connexions résiduelles.
+  identifier:
+    original: |-
+      A string representing the identifier or name of the pre-trained
+      model in the Hugging Face model hub.
+    translation: |
+      L'identifiant ou le nom du modèle préentraîné dans le hub de modèles Hugging Face.
+  revision:
+    original: |-
+      A string specifying the revision or version of the pre-trained
+      model in the Hugging Face model hub.
+    translation: |
+      La révision ou la version du modèle préentraîné dans le hub de modèles Hugging Face.
+value:
+  original: |
+    An initialized \code{\link[torch:nn_module]{torch::nn_module()}}.
+  translation: |
+    Un \code{\link[torch:nn_module]{torch::nn_module()}} initialisé.
+description:
+  original: |
+    Initializes a BigCode model
+  translation: |
+    Initialise un modèle BigCode
+section{Functions}:
+  original: |-
+    \itemize{
+    \item \code{gptbigcode_from_config()}: Initializes a \code{gptbigcode} from a config file from HF hub
+
+    \item \code{gptbigcode_from_pretrained()}: Initializes a \code{gptbigcode} and loads pre-trained weights from HF Hub
+
+    }
+  translation: |-
+    \itemize{
+    \item \code{gptbigcode_from_config()}: Initialise un \code{gptbigcode} à partir d'un fichier de configuration depuis le hub HF
+
+    \item \code{gptbigcode_from_pretrained()}: Initialise un \code{gptbigcode} et charge les poids préentraînés depuis le hub Hugging Face
+
+    }
+
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
