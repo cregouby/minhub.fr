@@ -1,0 +1,80 @@
+title:
+  original: GPT2
+  translation: GPT2
+arguments:
+  vocab_size:
+    original: An optional integer indicating the size of the vocabulary or the number
+      of unique tokens in the input data.
+    translation: |
+      Un entier optionnel indiquant la taille du vocabulaire ou le nombre 
+      de tokens uniques dans les données d'entrée.
+  n_embd:
+    original: An integer specifying the Dimensionality of the embeddings and hidden
+      states.
+    translation: |
+      Un entier spécifiant la dimensionalité des vecteurs d'embedding et des états cachés.
+  n_head:
+    original: An integer representing the number of attention heads in each attention
+      layer in the Transformer encoder.
+    translation: |
+      Un entier représentant le nombre de têtes d'attention dans chaque couche 
+      d'attention de l'encodeur du Transformer.
+  n_layer:
+    original: An integer indicating the umber of hidden layers in the Transformer
+      encoder.
+    translation: |
+      Un entier indiquant le nombre de couches cachées dans l'encodeur du Transformer.
+  max_pos:
+    original: An integer specifying the maximum sequence length that this model might
+      ever be used with.
+    translation: |
+      Un entier spécifiant la longueur maximale des séquences que ce modèle peut
+      recevoir.
+  pdrop:
+    original: |-
+      The dropout rate used in a few locations, such as after the embeddings,
+      attention layers and residual connections.
+    translation: |-
+      Le taux de dropout des couches qui l'utilisent, comme après les vecteurs embedding, 
+      les couches d'attention et les connexions résiduelles.
+  identifier:
+    original: A string representing the identifier or name of the pre-trained model
+      in the Hugging Face model hub.
+    translation: |
+      L'identifiant ou le nom du modèle préentraîné dans le hub de modèles Hugging Face.
+  revision:
+    original: A string specifying the revision or version of the pre-trained model
+      in the Hugging Face model hub.
+    translation: |
+      La révision ou la version du modèle préentraîné dans le hub de modèles Hugging Face.
+value:
+  original: |
+    An initialized \code{\link[torch:nn_module]{torch::nn_module()}}.
+  translation: |
+    Un module initialisé \code{\link[torch:nn_module]{torch::nn_module()}}.
+description:
+  original: |
+    Initializes a gpt2-type model
+  translation: |-
+    Initialise un modèle de type GPT2
+section{Functions}:
+  original: |-
+    \itemize{
+    \item \code{gpt2_from_config()}: Initializes a gpt2 model using a configuration defined in HF Hub
+
+    \item \code{gpt2_from_pretrained()}: Initializes the gpt2 model and load pre-trained weights from HF hub.
+
+    }
+  translation: |-
+    \itemize{
+    \item \code{gpt2_from_config()}: Initialise un modèle gpt2 en utilisant une configuration définie dans le Hub HF
+
+    \item \code{gpt2_from_pretrained()}: Initialise le modèle gpt2 et charge les poids préentraînés à partir du hub HF.
+
+    }
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
