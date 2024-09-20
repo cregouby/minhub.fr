@@ -1,0 +1,24 @@
+title:
+  original: Loads, and possibly downloads HF Hub models
+  translation: |
+    Charges et éventuellement télécharge les modèles du Hub HF.
+arguments:
+  identifier:
+    original: Repository id from the model
+    translation: |
+      Identifiant du dépôt du modèle
+  revision:
+    original: Revision to download from (eg tags, branches or commit hashes)
+  translation: |
+    Version à télécharger (soit par tag, branches ou hachages de commit)
+description:
+  original: |
+    Loads, and possibly downloads HF Hub models
+  translation: |
+    Charges et éventuellement télécharge les modèles du Hub HF.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

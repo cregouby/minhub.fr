@@ -1,0 +1,90 @@
+title:
+  original: llama
+  translation: |-
+    un modèle de type Llama
+arguments:
+  vocab_size:
+    original: |-
+      An integer indicating the size of the vocabulary or the number
+      of unique tokens in the input data.
+    translation: |-
+      Un entier indiquant la taille du vocabulaire ou le nombre 
+      de tokens uniques dans les données d'entrée.
+  n_embd:
+    original: An integer specifying the dimensionality of the embedding vectors.
+    translation: |
+      Un entier spécifiant la dimensionalité des vecteurs d'embedding.
+  n_inter:
+    original: An integer specifying the size of the intermediate layer in the MLP
+    translation: |-
+      Un entier spécifiant la taille de la couche intermédiaire dans le réseau
+      multilayer perceptron (MLP).
+  n_head:
+    original: |-
+      An integer representing the number of attention heads in the
+      multi-head attention mechanism.
+    translation: |-
+      Un entier représentant le nombre de têtes d'attention dans le 
+      mécanisme d'attention à multi-têtes.
+  n_layer:
+    original: An integer indicating the number of layers in the deep learning model.
+  translation: |-
+    Un entier indiquant le nombre de couches dans le modèle d'apprentissage profond.
+  max_pos:
+    original: |-
+      An integer specifying the maximum position encoding value or
+      the maximum sequence length.
+    translation: |-
+      Un entier spécifiant la valeur maximale d'encodage de position ou
+      la longueur maximale de la séquence d'entrée.
+  rmsnorm_eps:
+    original: The epsilon used by the rms normalization layers.
+    translation: |-
+      L'épsilon utilisé par les couches de normalisation rms.
+  rope_base:
+    original: The base period of the RoPE embeddings.
+    translation: |-
+      La période de base des embedding RoPE.
+  identifier:
+    original: |-
+      A string representing the identifier or name of the pre-trained
+      model in the Hugging Face model hub.
+    translation: |
+      L'identifiant ou le nom du modèle préentraîné dans le hub de modèles Hugging Face.
+  revision:
+    original: |-
+      A string specifying the revision or version of the pre-trained
+      model in the Hugging Face model hub.
+    translation: |
+      La révision ou la version du modèle préentraîné dans le hub de modèles Hugging Face.
+value:
+  original: |
+    An initialized \code{\link[torch:nn_module]{torch::nn_module()}}.
+  translation: |-
+    Un module \code{\link[torch:nn_module]{torch::nn_module()}} initialisé.
+description:
+  original: |
+    Initializes a llama like model
+  translation: |
+    Initialise un modèle de type Llama
+section{Functions}:
+  original: |-
+    \itemize{
+    \item \code{llama_from_config()}: Initializes a llama model using a configuration defined in HF Hub
+
+    \item \code{llama_from_pretrained()}: Initializes the llama model and load pre-trained weights from HF hub.
+
+    }
+  translation: |-
+    \itemize{
+    \item \code{llama_from_config()}: Initialisation d'un modèle Llama à l'aide de la configuration définie dans la plateforme HF Hub
+
+    \item \code{llama_from_pretrained()}: Initialisation du modèle Llama et chargement des poids pré-entraînés depuis la plateforme HF hub.
+
+    }
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

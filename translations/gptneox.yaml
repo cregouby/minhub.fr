@@ -1,12 +1,12 @@
 title:
-  original: GPT BigCode
-  translation: GPT BigCode
+  original: GPT NeoX
+  translation: GPT NeoX
 arguments:
   vocab_size:
     original: |-
       An integer indicating the size of the vocabulary or the number
       of unique tokens in the input data.
-    translation: |-
+    translation: |
       Un entier indiquant la taille du vocabulaire ou le nombre 
       de tokens uniques dans les données d'entrée.
   n_embd:
@@ -31,49 +31,52 @@ arguments:
     translation: |
       Un entier spécifiant la longueur maximale des séquences que ce modèle peut
       recevoir.
-  pdrop:
-    original: Dropout probability the attention, residual and embeddings dropout.
+  n_rot:
+    original: |-
+      An integer indicating the number dimensions used in the rotary
+      position embedding. Can also be a float \verb{0 < n_rot < 1} indicating the fraction
+      of \code{n_embd}.
     translation: |-
-      Le taux de dropout dans les vecteurs embedding, 
-      les couches d'attention et les connexions résiduelles.
+      Un entier indiquant le nombre de dimensions utilisées dans l'embedding 
+      de position rotatif. Peut également être un réel \verb{0 < n_rot < 1} 
+      indiquant la fraction de \code{n_embd}.
   identifier:
     original: |-
       A string representing the identifier or name of the pre-trained
       model in the Hugging Face model hub.
-    translation: |
+    translation: |-
       L'identifiant ou le nom du modèle préentraîné dans le hub de modèles Hugging Face.
   revision:
     original: |-
       A string specifying the revision or version of the pre-trained
       model in the Hugging Face model hub.
-    translation: |
+    translation: |-
       La révision ou la version du modèle préentraîné dans le hub de modèles Hugging Face.
 value:
   original: |
     An initialized \code{\link[torch:nn_module]{torch::nn_module()}}.
   translation: |
-    Un \code{\link[torch:nn_module]{torch::nn_module()}} initialisé.
+    Un module \code{\link[torch:nn_module]{torch::nn_module()}} initialisé.
 description:
   original: |
-    Initializes a BigCode model
+    Initializes a GPTNeoX like model
   translation: |
-    Initialise un modèle BigCode
+    Initialise un modèle équivalnet à GPTNeoX
 section{Functions}:
   original: |-
     \itemize{
-    \item \code{gptbigcode_from_config()}: Initializes a \code{gptbigcode} from a config file from HF hub
+    \item \code{gptneox_from_config()}: Initializes a gptneox model using a configuration defined in HF Hub
 
-    \item \code{gptbigcode_from_pretrained()}: Initializes a \code{gptbigcode} and loads pre-trained weights from HF Hub
+    \item \code{gptneox_from_pretrained()}: Initializes the gptneox model and load pre-trained weights from HF hub.
 
     }
   translation: |-
     \itemize{
-    \item \code{gptbigcode_from_config()}: Initialise un \code{gptbigcode} à partir d'un fichier de configuration depuis le hub HF
-
-    \item \code{gptbigcode_from_pretrained()}: Initialise un \code{gptbigcode} et charge les poids préentraînés depuis le hub Hugging Face
+    \item \code{gptneox_from_config()}: Initialise un modèle gptneox en utilisant une 
+    configuration définie depuis le hub Hugging Face. 
+    \item \code{gptneox_from_pretrained()}: Initialise un modèle gptneox et charge les poids préentraînés à partir du hub HF.
 
     }
-
 untranslatable:
 - alias
 - name
