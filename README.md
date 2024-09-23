@@ -23,7 +23,7 @@ Voici comment utiliser {minhub} avec l'aide en français :
 # configure la session en langue française
 Sys.setenv(LANGUAGE = "fr")
 
-# charge la librairie d'aide de tabnet en traduction française, et {tabnet}
+# charge la librairie d'aide de minhub en traduction française, et {minhub}
 library(minhub.fr)
 library(minhub)
 
